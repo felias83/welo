@@ -1,0 +1,224 @@
+body
+{
+margin:0 auto;
+width:1024px;
+height:724px;
+background:#99ccff;
+}
+
+#sol{
+position: absolute;
+left:40%;
+top:0px;
+border-style:solid;
+border-color:yellow;
+height:220px;
+width:220px;
+border-radius: 50%;
+background:yellow;
+}
+
+
+
+#logo{
+	position:absolute;
+	left:40%;
+	top:40%;
+	/*margin:0 auto;*/
+	width:250px; 
+	height:160px;
+	/*border: 1px solid;*/
+	-moz-animation: volar2 5s;
+	-webkit-animation: volar2 5s;
+
+        -webkit-ANIMATION-FILL-MODE:forwards;
+        -moz-ANIMATION-FILL-MODE:forwards;
+	
+	-moz-animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	}
+
+
+@-moz-keyframes volar2
+{
+/*-moz-animation:translate(50%,0px;)*/
+from {left:40%;top:40%;}
+to {left:40%; top:8%;}
+}
+
+@-webkit-keyframes volar2
+{
+from {left:40%;top:40%;}
+to {left:40%; top:8%;}
+}
+
+
+
+
+
+#ala_der
+{
+width:60px; 
+height:30px;
+background:black;
+margin-left:150px;
+float:left;
+position:relative;
+-moz-animation: mover 2s  ease-in-out alternate;
+-webkit-animation: mover 2s  ease-in-out alternate;
+-moz-animation-delay: 2s;
+-webkit-animation-delay: 2s;
+}
+
+@-moz-keyframes mover{
+0%{-moz-transform:rotateZ(0deg);}
+100%{-moz-transform:rotateZ(0deg);}
+from {left:0px;top:0px;}
+to {left:50px; top:60px;}
+
+}
+
+@-webkit-keyframes mover{
+0%{-webkit-transform:rotateZ(0deg);}
+100%{-webkit-transform:rotateZ(0deg);}
+from {left:0px;top:0px;}
+to {left:50px; top:60px;}
+
+}
+
+
+#ala_izq{
+	width:60px;
+	height: 30px;
+	background: black;
+	position:relative;
+	margin-left:10px; ;
+
+-moz-animation: moverizq 2s  ease-in-out alternate;
+-webkit-animation: moverizq 2s  ease-in-out alternate;
+-moz-animation-delay: 2s;
+-webkit-animation-delay: 2s;
+}
+
+@-moz-keyframes moverizq
+{
+
+0%{-moz-transform:rotateZ(0deg);}
+100%{-moz-transform:rotateZ(0deg);}
+from {right:0px;top:0px;}
+to {right:50px; top:60px;}
+}
+
+@-webkit-keyframes moverizq
+{
+
+0%{-webkit-transform:rotateZ(0deg);}
+100%{-webkit-transform:rotateZ(0deg);}
+from {right:0px;top:0px;}
+to {right:50px; top:60px;}
+}
+
+/*-------------------------------------------------------*/
+#brazoizq{
+    width: 30px;
+    height: 60px;
+    background: black;
+    margin-left:40px;	
+    float:left;
+  position:relative;
+    -moz-animation: rotarizq 2s  ease-out alternate;
+    -webkit-animation: rotarizq 2s  ease-out alternate;
+  
+-moz-animation-delay: 2s;
+-webkit-animation-delay: 2s;
+}
+
+@-moz-keyframes rotarizq{
+0%{-moz-transform:rotateZ(0deg);}
+100%{-moz-transform:rotateZ(-90deg);}
+from {right:0px;top:0px;}
+to {right:15px; top:15px;}
+}
+@-webkit-keyframes rotarizq{
+0%{-webkit-transform:rotateZ(0deg);}
+100%{-webkit-transform:rotateZ(-90deg);}
+from {right:0px;top:0px;}
+to {right:15px; top:15px;}
+}
+
+#brazoder
+{
+    width: 30px;
+    height: 60px;
+    background: black;
+    float:left;
+position:relative;
+    margin-left:30px;
+-moz-animation: rotar 2s  ease-out alternate;
+-webkit-animation: rotar 2s  ease-out alternate;
+
+-moz-animation-delay: 2s;
+-webkit-animation-delay: 2s;
+
+}
+
+@-moz-keyframes rotar{
+0%{-moz-transform:rotateZ(0deg);}
+100%{-moz-transform:rotateZ(90deg);}
+from {left:0px;top:0px;}
+to {left:15px; top:15px;}
+}
+
+@-webkit-keyframes rotar{
+0%{-webkit-transform:rotateZ(0deg);}
+100%{-webkit-transform:rotateZ(90deg);}
+from {left:0px;top:0px;}
+to {left:15px; top:15px;}
+}
+
+#uelo
+{
+font-family:"Code";
+font-size:72px;
+margin-left:100%;
+margin-top:-5%;
+position:relative;
+
+-moz-animation: uelo 3s;
+-webkit-animation: uelo 3s;
+
+-moz-animation-delay: 5s;
+-webkit-animation-delay: 5s;
+
+-webkit-ANIMATION-FILL-MODE:forwards;
+-moz-ANIMATION-FILL-MODE:forwards;
+
+}
+@-moz-Keyframes uelo{
+
+from{ margin-left:100%;}
+to {margin-left:60%}
+}
+
+#digital{
+font-family:"Code";
+display:block;
+font-size:32px;
+margin-left:100%;
+position:relative;
+top:-10%;
+
+-moz-animation: slidein 3s;
+-webkit-animation: slidein 3s;
+
+-moz-animation-delay: 7s;
+-webkit-animation-delay: 7s;
+
+-webkit-ANIMATION-FILL-MODE:forwards;
+-moz-ANIMATION-FILL-MODE:forwards;
+}
+
+@-moz-Keyframes slidein{
+from{ margin-left:100%;}
+to {margin-left:60%}
+}
