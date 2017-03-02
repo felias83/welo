@@ -60,7 +60,7 @@
       <div class="jumbotron">
       
 
-<form method="post" class="contacto" >
+<form method="post" class="contacto" action="email.php" >
   <fieldset>
   <div >
     <label >Nombre</label>

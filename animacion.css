@@ -1,12 +1,57 @@
+
 body
 {
 margin:0 auto;
-width:1024px;
-height:724px;
-background:#99ccff;
+/*width:90%;*/
+/*height:724px;*/
+background:black;
+/*border:1px white solid;*/
+font-family:Courier;
 }
 
-#sol{
+
+#menu{
+margin:0 auto;
+
+
+}
+
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+ background-color: #333; 
+}
+
+li  {
+float:right;
+  
+}
+
+li a{
+display:block;
+padding:30px 24px;
+color:white;
+text-align: center;
+text-decoration: none;
+}
+
+li a:hover{
+background-color:#111;
+}
+
+.active {
+    background-color: #333;
+}
+
+
+@media screen and (max-width: 600px){
+    ul li.right, 
+    ul li {float: none;}
+}
+
+/*#sol{
 position: absolute;
 left:40%;
 top:0px;
@@ -17,19 +62,24 @@ width:220px;
 border-radius: 50%;
 background:yellow;
 }
+*/
+#animacion{
+/*border:1px white solid;*/
+position:relative;
+height:200px;
 
-
+}
 
 #logo{
 	position:absolute;
-	left:40%;
-	top:40%;
+	left:5%;
+	top:190%;
 	/*margin:0 auto;*/
-	width:250px; 
-	height:160px;
+	width:20%; 
+	height:40%;
 	/*border: 1px solid;*/
-	-moz-animation: volar2 5s;
-	-webkit-animation: volar2 5s;
+	-moz-animation: volar2 7s;
+	-webkit-animation: volar2 7s;
 
         -webkit-ANIMATION-FILL-MODE:forwards;
         -moz-ANIMATION-FILL-MODE:forwards;
@@ -42,30 +92,27 @@ background:yellow;
 @-moz-keyframes volar2
 {
 /*-moz-animation:translate(50%,0px;)*/
-from {left:40%;top:40%;}
-to {left:40%; top:8%;}
+from {left:5%;top:190%;}
+to {left:5%; top:-33%;}
 }
 
 @-webkit-keyframes volar2
 {
-from {left:40%;top:40%;}
-to {left:40%; top:8%;}
+from {left:5%;top:190%;}
+to {left:5%; top:-33%;}
 }
-
-
-
 
 
 #ala_der
 {
-width:60px; 
-height:30px;
-background:black;
-margin-left:150px;
+width:30px; 
+height:15px;
+background:white;
+margin-left:79px;
 float:left;
 position:relative;
--moz-animation: mover 2s  ease-in-out alternate;
--webkit-animation: mover 2s  ease-in-out alternate;
+-moz-animation: mover 4s  ease-in-out alternate;
+-webkit-animation: mover 4s  ease-in-out alternate;
 -moz-animation-delay: 2s;
 -webkit-animation-delay: 2s;
 }
@@ -74,7 +121,7 @@ position:relative;
 0%{-moz-transform:rotateZ(0deg);}
 100%{-moz-transform:rotateZ(0deg);}
 from {left:0px;top:0px;}
-to {left:50px; top:60px;}
+to {left:25px; top:30px;}
 
 }
 
@@ -82,20 +129,20 @@ to {left:50px; top:60px;}
 0%{-webkit-transform:rotateZ(0deg);}
 100%{-webkit-transform:rotateZ(0deg);}
 from {left:0px;top:0px;}
-to {left:50px; top:60px;}
+to {left:25px; top:30px;}
 
 }
 
 
 #ala_izq{
-	width:60px;
-	height: 30px;
-	background: black;
+	width:30px;
+	height: 15px;
+	background: white;
 	position:relative;
-	margin-left:10px; ;
+	margin-left:5px; ;
 
--moz-animation: moverizq 2s  ease-in-out alternate;
--webkit-animation: moverizq 2s  ease-in-out alternate;
+-moz-animation: moverizq 4s  ease-in-out alternate;
+-webkit-animation: moverizq 4s  ease-in-out alternate;
 -moz-animation-delay: 2s;
 -webkit-animation-delay: 2s;
 }
@@ -106,7 +153,7 @@ to {left:50px; top:60px;}
 0%{-moz-transform:rotateZ(0deg);}
 100%{-moz-transform:rotateZ(0deg);}
 from {right:0px;top:0px;}
-to {right:50px; top:60px;}
+to {right:25px; top:30px;}
 }
 
 @-webkit-keyframes moverizq
@@ -115,19 +162,19 @@ to {right:50px; top:60px;}
 0%{-webkit-transform:rotateZ(0deg);}
 100%{-webkit-transform:rotateZ(0deg);}
 from {right:0px;top:0px;}
-to {right:50px; top:60px;}
+to {right:25px; top:30px;}
 }
 
 /*-------------------------------------------------------*/
 #brazoizq{
-    width: 30px;
-    height: 60px;
-    background: black;
-    margin-left:40px;	
+    width: 15px;
+    height: 30px;
+    background: white;
+    margin-left:20px;	
     float:left;
   position:relative;
-    -moz-animation: rotarizq 2s  ease-out alternate;
-    -webkit-animation: rotarizq 2s  ease-out alternate;
+    -moz-animation: rotarizq 4s  ease-out alternate;
+    -webkit-animation: rotarizq 4s  ease-out alternate;
   
 -moz-animation-delay: 2s;
 -webkit-animation-delay: 2s;
@@ -137,25 +184,26 @@ to {right:50px; top:60px;}
 0%{-moz-transform:rotateZ(0deg);}
 100%{-moz-transform:rotateZ(-90deg);}
 from {right:0px;top:0px;}
-to {right:15px; top:15px;}
+to {right:8px; top:8px;}
 }
 @-webkit-keyframes rotarizq{
 0%{-webkit-transform:rotateZ(0deg);}
 100%{-webkit-transform:rotateZ(-90deg);}
 from {right:0px;top:0px;}
-to {right:15px; top:15px;}
+to {right:8px; top:8px;}
 }
 
 #brazoder
 {
-    width: 30px;
-    height: 60px;
-    background: black;
+    width: 15px;
+    height: 30px;
+   
+    background: white;
     float:left;
 position:relative;
-    margin-left:30px;
--moz-animation: rotar 2s  ease-out alternate;
--webkit-animation: rotar 2s  ease-out alternate;
+    margin-left:15px;
+-moz-animation: rotar 4s  ease-out alternate;
+-webkit-animation: rotar 4s  ease-out alternate;
 
 -moz-animation-delay: 2s;
 -webkit-animation-delay: 2s;
@@ -166,47 +214,80 @@ position:relative;
 0%{-moz-transform:rotateZ(0deg);}
 100%{-moz-transform:rotateZ(90deg);}
 from {left:0px;top:0px;}
-to {left:15px; top:15px;}
+to {left:8px; top:8px;}
 }
 
 @-webkit-keyframes rotar{
 0%{-webkit-transform:rotateZ(0deg);}
 100%{-webkit-transform:rotateZ(90deg);}
 from {left:0px;top:0px;}
-to {left:15px; top:15px;}
+to {left:8px; top:8px;}
 }
 
-#uelo
+
+#medio{
+width: 14px;
+height: 15px;
+background:  #FFC300;
+margin-left:15px;
+margin-top:15px;
+float:left;
+}
+
+#pieder
 {
-font-family:"Code";
-font-size:72px;
-margin-left:100%;
-margin-top:-5%;
+width: 15px;
+height:15px;
+background: #C70039;
+margin-left:65px;	
+margin-top:0px;
+float:left;
 position:relative;
+}
 
--moz-animation: uelo 3s;
--webkit-animation: uelo 3s;
+#pieizq
+{
+width: 15px;
+height: 15px;
+background: #7ab0cd;
+margin-top:30px;
+margin-left:35px;
+}
 
--moz-animation-delay: 5s;
--webkit-animation-delay: 5s;
+#elo
+{
+
+font-family:"Code";
+font-size:35px;
+margin-left:13%;
+margin-top:-7%;
+position:absolute;
+color:white;
+opacity:0;
+-moz-animation: elo 3s;
+-webkit-animation: elo 3s;
+
+-moz-animation-delay: 7s;
+-webkit-animation-delay: 7s;
 
 -webkit-ANIMATION-FILL-MODE:forwards;
 -moz-ANIMATION-FILL-MODE:forwards;
 
 }
-@-moz-Keyframes uelo{
+@-moz-Keyframes elo{
 
-from{ margin-left:100%;}
-to {margin-left:60%}
+from{ opacity:0;}
+to {opacity:1}
 }
 
-#digital{
+/*#digital{
 font-family:"Code";
 display:block;
-font-size:32px;
-margin-left:100%;
+font-size:16px;
+margin-left:43%;
 position:relative;
-top:-10%;
+top:-8%;
+opacity:0;
 
 -moz-animation: slidein 3s;
 -webkit-animation: slidein 3s;
@@ -219,6 +300,158 @@ top:-10%;
 }
 
 @-moz-Keyframes slidein{
-from{ margin-left:100%;}
-to {margin-left:60%}
+from{ opacity:0;}
+to {opacity:1}
+}*/
+h1,h2, h3, h4{
+color:white;
+/*font-family:code;*/
+}
+
+#contenido
+{
+/*border:3px yellow solid;*/
+position:relative;
+overflow:hidden;
+}
+
+#DPW{
+
+color:grey;
+
+top:0px;
+margin-left:5%;
+float:left;
+height:300px;
+/*border:3px blue solid;*/
+}
+
+
+#PPW{
+color:gray;
+top:50px;
+margin-right:5%;
+float:right;
+height:300px;
+/*border:2px purple solid;*/
+}
+
+#pie
+{
+
+background-color:  #333;
+margin:0 auto;
+height:200px;
+}
+
+.boton{
+margin:0 auto;
+margin-top:30px;
+font-size:18px;
+/*font-family:Code;*/
+color:white;
+width: 130px;
+     height: 130px;
+     background-color:  #449d44;
+border:none;
+}
+
+.boton2{
+margin:0 auto;
+margin-top:30px;
+font-size:18px;
+/*font-family:Code;*/
+color:white;
+width: 130px;
+     height: 130px;
+     background-color: #4c9cd9;
+border:none;
+}
+
+
+.circulo {
+     width: 100px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #5cb85c;
+}
+
+.texto_form{
+/*font-family:code;*/
+color:white;
+width:100px;
+margin-bottom:33px;
+display:block;
+float:left;
+margin-left:5%;
+
+}
+
+.input_form{
+/*font-family:code;*/
+color:black;
+width:200px;
+margin-right:10%;
+float:right;
+display:block;
+margin-bottom:30px;
+}
+
+
+#servicios{
+margin:0 auto;
+/*border:3px grey solid;*/
+}
+
+#contacto{
+margin-top:200px;
+margin:400px auto;
+height:500px;
+width:30%;
+border:1px white dashed;
+overflow:hidden;
+position:relative;
+}
+
+#datos{
+margin-top:70px;
+}
+
+#boton_envio{
+margin-top: 30px;
+font-size:14px;
+color:white;
+width: 90px;
+height: 90px;
+background: #C70039;
+border:none;
+margin-left:40%;
+position:relative;
+}
+
+.form{
+margin-left:5%;
+}
+
+
+/* # cambiar estilo a error
+============================================*/
+.controls > .error {
+    color: #b94a48;
+    display: inline-block;
+    *display: inline;
+    padding-left: 5px;
+    vertical-align: middle;
+    *zoom: 1;
+}
+/* # estilo de pagina
+============================================*/
+.container  {
+    width: 650px;
+    margin: auto;
+}
+h2 {
+    text-align: center;
 }
