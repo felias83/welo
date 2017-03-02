@@ -8,14 +8,15 @@
 </head>
 
 		<div id="menu">
+		<nav>
 	 		<ul>
-				
-			<!--<li><a href="nosotros.html">Nosotros</a></li>--->			 
-			 <li><a href="index.html">Contacto</a></li>
-			 <li><a href="index.html">Portafolio</a></li>	
-			 <li><a href="index.html">Servicios</a></li>
+			<!--<li><a href="nosotros.html">Nosotros</a></li>--->
+			 <li><a href="#contacto">Contacto</a></li>
+			 <li><a href="#portafolio">Portafolio</a></li>	
+			 <li><a href="#servicios">Servicios</a></li>
 			 <li class="active"><a href="index.html">Inicio</a></li>
-			</ul>  			
+			</ul> 
+		</nav> 			
 		</div>
 
 
@@ -61,7 +62,9 @@
 		</div>
 	</div><!-------------animacion ---->
     <div id="contenido">
-	    <div id="servicios">
+
+	 <section id="servicios">
+         <!--<div id="servicios">
 		<!--<h1 align="center">Servicios</h1>-->
 			<div id="PPW">
 			   <h2 align="center">Programación Web</h2>
@@ -80,9 +83,11 @@
 			       </div>
 			       <p align="center"><a  href="contacto.php"><button class="boton">Empieza ya!</button></a></p>
 	     	       </div>
-        </div><!---servicios-->
+        <!--</div>--servicios-->
+	</section>
 
-  	<div id="contacto">
+	<section id="contacto">
+  	<!--<div id="contacto">-->
 	     <h2 align="center" >Contacto</h2>
 		 <form method="post" class="contacto" id="fomulario" action="email.php" >
 
@@ -124,8 +129,8 @@
 
 
 
-	</div><!---contacto--->
-
+	<!---</div>contacto--->
+	</section>
 	<!--<div id="Nosotros">
 	<p>Somos un equipo de progrmadores y diseñadores </p>	
 	</div>-->
